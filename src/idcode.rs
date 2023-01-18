@@ -5,7 +5,7 @@ use crate::InvalidData;
 
 /// An ID used within the file to refer to a particular variable.
 #[derive(Debug, Copy, Clone, Eq, PartialEq, PartialOrd, Ord, Hash)]
-pub struct IdCode(u64);
+pub struct IdCode(pub u64);
 
 const ID_CHAR_MIN: u8 = b'!';
 const ID_CHAR_MAX: u8 = b'~';
